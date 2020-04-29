@@ -20,7 +20,7 @@ public class EndpointController {
 
     @GetMapping("/")
     public String getRequestsCount() {
-        return String.format("Number of requests %s (gateway %d, secret %s)",
+        return String.format("[TDUK]Number of requests %s (gateway %d, secret %s)",
             backendAdapter.getRequests(), instanceId, secret);
     }
 }
