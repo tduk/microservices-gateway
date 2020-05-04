@@ -30,7 +30,7 @@ public class EndpointControllerTests {
         mockMvc.perform(get("/"))
             .andExpect(status().isOk())
             .andExpect(MockMvcResultMatchers.content().string(
-                startsWith("[TDUK-3]Number of requests 1")));
+                startsWith("[TDUK-4]Number of requests 1")));
     }
 
     @Test
